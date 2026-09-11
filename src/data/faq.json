@@ -1,0 +1,30 @@
+[
+  {
+    "q": "Apakah saya bisa berkonsultasi dulu tanpa harus langsung membeli?",
+    "a": "Bisa. Sebagian besar percakapan yang masuk memang dimulai dari pertanyaan, bukan dari pemesanan. Anda boleh bertanya soal perbedaan model, rincian OTR, atau skema pembayaran lebih dulu, dan Mahesa tidak akan mendesak Anda mengambil keputusan."
+  },
+  {
+    "q": "Model JAECOO apa saja yang bisa saya pesan lewat Mahesa?",
+    "a": "Ada tiga unit: JAECOO J5 Premium (Rp 324.900.000 OTR), JAECOO J7 SHS (Rp 514.900.000 OTR), dan JAECOO J8 SHS ARDIS (Rp 838.000.000 OTR). Rincian spesifikasi tiap model ada di halaman Harga dan Model."
+  },
+  {
+    "q": "Apakah saya bisa test drive sebelum memutuskan?",
+    "a": "Saat ini unit yang tersedia untuk test drive adalah JAECOO J5 Premium. Jadwal dan lokasinya bisa diatur, termasuk di area domisili Anda. Untuk J7 SHS dan J8 SHS ARDIS, unitnya sedang tidak tersedia untuk test drive, tetapi Anda tetap bisa meminta Mahesa mengabari begitu tersedia."
+  },
+  {
+    "q": "Apakah pengajuan kreditnya dibantu?",
+    "a": "Ya. Mahesa bantu dari awal: menentukan skema yang sesuai kemampuan, menyiapkan kelengkapan berkas, mengajukan ke pihak leasing, sampai keluar konfirmasi persetujuan. Anda tidak perlu mengurusnya sendiri."
+  },
+  {
+    "q": "Area mana saja yang dilayani?",
+    "a": "Gading Serpong, BSD, Alam Sutera, Serpong, Karawaci, Tangerang, Tangerang Selatan, dan Jakarta Barat. Di luar area tersebut tetap bisa dibicarakan lewat WhatsApp."
+  },
+  {
+    "q": "Berapa lama proses dari pemesanan sampai serah terima unit?",
+    "a": "TODO: isi perkiraan waktu proses yang realistis berdasarkan ketersediaan unit dan pengalaman serah terima sebelumnya. Jangan menuliskan angka sebelum Anda yakin."
+  },
+  {
+    "q": "Apa yang terjadi setelah unit saya terima?",
+    "a": "Pendampingan tidak berhenti di serah terima. Mahesa bantu pengingat servis pertama, penjelasan fitur yang belum sempat dicoba, dan pertanyaan lanjutan soal perawatan."
+  }
+]

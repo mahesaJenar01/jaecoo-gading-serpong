@@ -1,0 +1,177 @@
+{
+  "_catatan": "CONTOH, GANTI NANTI. Seluruh nama produk, harga, dan catatan di berkas ini adalah data contoh supaya katalog bisa dilihat utuh. JSON tidak mendukung komentar, jadi setiap item diberi penanda \"contoh\": true. Ganti dengan katalog dan harga yang sebenarnya sebelum situs dipublikasikan.",
+  "kategori": ["Proteksi", "Interior", "Eksterior", "Audio", "Perawatan"],
+  "items": [
+    {
+      "id": "kaca-film-depan-samping",
+      "contoh": true,
+      "nama": "Kaca Film Depan dan Samping",
+      "kategori": "Proteksi",
+      "deskripsiSingkat": "Menahan panas dan silau untuk kaca depan serta kaca samping.",
+      "hargaMulai": 2500000,
+      "catatan": "Harga bergantung tingkat kegelapan dan jenis bahan yang dipilih."
+    },
+    {
+      "id": "kaca-film-menyeluruh",
+      "contoh": true,
+      "nama": "Kaca Film Menyeluruh Kelas Atas",
+      "kategori": "Proteksi",
+      "deskripsiSingkat": "Seluruh kaca, dengan penolakan panas lebih tinggi dan visibilitas malam tetap jernih.",
+      "hargaMulai": 4500000,
+      "catatan": "Termasuk kaca belakang dan panoramic roof bila tersedia pada unit."
+    },
+    {
+      "id": "coating-bodi-9h",
+      "contoh": true,
+      "nama": "Coating Bodi 9H",
+      "kategori": "Proteksi",
+      "deskripsiSingkat": "Lapisan pelindung cat agar bodi lebih mudah dibersihkan dan tetap mengilap.",
+      "hargaMulai": 5500000,
+      "catatan": "Butuh persiapan permukaan, pengerjaan menginap satu malam."
+    },
+    {
+      "id": "ppf-depan",
+      "contoh": true,
+      "nama": "Paint Protection Film Bagian Depan",
+      "kategori": "Proteksi",
+      "deskripsiSingkat": "Film bening pada kap, bumper, dan spion untuk menahan lecet dari kerikil.",
+      "hargaMulai": 8500000,
+      "catatan": "Cakupan bisa disesuaikan, dari bumper saja sampai satu bodi penuh."
+    },
+    {
+      "id": "anti-karat-kolong",
+      "contoh": true,
+      "nama": "Anti Karat Kolong",
+      "kategori": "Proteksi",
+      "deskripsiSingkat": "Pelapis kolong untuk area yang sering terkena air dan lumpur.",
+      "hargaMulai": 2000000,
+      "catatan": "Disarankan sebelum musim hujan atau bagi yang sering melewati genangan."
+    },
+    {
+      "id": "karpet-dasar-custom",
+      "contoh": true,
+      "nama": "Karpet Dasar Custom",
+      "kategori": "Interior",
+      "deskripsiSingkat": "Karpet mengikuti bentuk lantai kabin, mudah dilepas dan dicuci.",
+      "hargaMulai": 1800000,
+      "catatan": "Tersedia beberapa pilihan bahan dan warna jahitan."
+    },
+    {
+      "id": "cover-jok-kulit-sintetis",
+      "contoh": true,
+      "nama": "Cover Jok Kulit Sintetis",
+      "kategori": "Interior",
+      "deskripsiSingkat": "Pelapis jok untuk menjaga kondisi jok bawaan tetap bersih.",
+      "hargaMulai": 3500000,
+      "catatan": "Pemasangan menyesuaikan fitur jok, termasuk lubang ventilasi."
+    },
+    {
+      "id": "tirai-kaca-samping",
+      "contoh": true,
+      "nama": "Tirai Kaca Samping",
+      "kategori": "Interior",
+      "deskripsiSingkat": "Menahan sinar matahari langsung untuk penumpang belakang.",
+      "hargaMulai": 900000,
+      "catatan": "Cocok bagi yang sering membawa anak kecil."
+    },
+    {
+      "id": "organizer-bagasi",
+      "contoh": true,
+      "nama": "Organizer Bagasi",
+      "kategori": "Interior",
+      "deskripsiSingkat": "Sekat bagasi agar barang tidak berpindah saat mobil bermanuver.",
+      "hargaMulai": 650000,
+      "catatan": "Bisa dilipat saat bagasi perlu dipakai penuh."
+    },
+    {
+      "id": "talang-air-4-pintu",
+      "contoh": true,
+      "nama": "Talang Air 4 Pintu",
+      "kategori": "Eksterior",
+      "deskripsiSingkat": "Membuat kaca tetap bisa dibuka sedikit saat hujan.",
+      "hargaMulai": 750000,
+      "catatan": "Tersedia model tempel dan model injak."
+    },
+    {
+      "id": "roof-rail-crossbar",
+      "contoh": true,
+      "nama": "Roof Rail Crossbar",
+      "kategori": "Eksterior",
+      "deskripsiSingkat": "Palang atap untuk membawa barang panjang atau boks atap.",
+      "hargaMulai": 2200000,
+      "catatan": "Perhatikan batas beban atap kendaraan."
+    },
+    {
+      "id": "side-step-samping",
+      "contoh": true,
+      "nama": "Side Step Samping",
+      "kategori": "Eksterior",
+      "deskripsiSingkat": "Pijakan samping untuk memudahkan naik turun kendaraan.",
+      "hargaMulai": 3800000,
+      "catatan": "Membantu penumpang lanjut usia dan anak anak."
+    },
+    {
+      "id": "mud-guard",
+      "contoh": true,
+      "nama": "Mud Guard 4 Roda",
+      "kategori": "Eksterior",
+      "deskripsiSingkat": "Menahan cipratan lumpur ke bodi samping dan kolong.",
+      "hargaMulai": 600000,
+      "catatan": "Pemasangan tanpa melubangi bodi."
+    },
+    {
+      "id": "upgrade-speaker-depan",
+      "contoh": true,
+      "nama": "Upgrade Speaker Depan",
+      "kategori": "Audio",
+      "deskripsiSingkat": "Penggantian speaker depan untuk suara vokal yang lebih jernih.",
+      "hargaMulai": 3200000,
+      "catatan": "Menggunakan sistem audio bawaan, tanpa mengganti head unit."
+    },
+    {
+      "id": "subwoofer-aktif",
+      "contoh": true,
+      "nama": "Subwoofer Aktif Kolong Jok",
+      "kategori": "Audio",
+      "deskripsiSingkat": "Menambah nada rendah tanpa memakan ruang bagasi.",
+      "hargaMulai": 4200000,
+      "catatan": "Dipasang di kolong jok, kabel dirapikan di balik trim."
+    },
+    {
+      "id": "peredam-4-pintu",
+      "contoh": true,
+      "nama": "Peredam Suara 4 Pintu",
+      "kategori": "Audio",
+      "deskripsiSingkat": "Mengurangi suara dari luar sekaligus merapatkan suara audio di kabin.",
+      "hargaMulai": 3900000,
+      "catatan": "Bisa diperluas ke lantai dan bagasi."
+    },
+    {
+      "id": "cuci-poles-bodi",
+      "contoh": true,
+      "nama": "Cuci dan Poles Bodi",
+      "kategori": "Perawatan",
+      "deskripsiSingkat": "Perawatan rutin untuk mengangkat kotoran dan mengembalikan kilap.",
+      "hargaMulai": 450000,
+      "catatan": "Disarankan berkala, terutama bagi mobil yang parkir di luar ruangan."
+    },
+    {
+      "id": "detailing-interior",
+      "contoh": true,
+      "nama": "Detailing Interior Menyeluruh",
+      "kategori": "Perawatan",
+      "deskripsiSingkat": "Pembersihan kabin sampai celah, jok, plafon, dan panel.",
+      "hargaMulai": 1200000,
+      "catatan": "Waktu pengerjaan sekitar setengah hari."
+    },
+    {
+      "id": "coating-pelek",
+      "contoh": true,
+      "nama": "Coating Pelek",
+      "kategori": "Perawatan",
+      "deskripsiSingkat": "Melapisi pelek agar debu rem lebih mudah dibersihkan.",
+      "hargaMulai": 900000,
+      "catatan": "Dikerjakan bersamaan dengan coating bodi lebih efisien."
+    }
+  ]
+}

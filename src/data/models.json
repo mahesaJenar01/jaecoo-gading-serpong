@@ -1,0 +1,435 @@
+[
+  {
+    "slug": "jaecoo-j5-premium",
+    "nama": "JAECOO J5 Premium",
+    "tipe": "SUV listrik murni",
+    "ringkasan": "SUV listrik murni lima penumpang dengan baterai LFP 60,9 kWh dan jarak tempuh hingga 461 km NEDC. Unit yang paling sering ditanyakan dan satu satunya yang tersedia untuk test drive saat ini.",
+    "hargaMulai": 324900000,
+    "unggulan": true,
+    "varian": [
+      {
+        "nama": "Premium",
+        "hargaOtr": 324900000,
+        "testDrive": {
+          "tersedia": true,
+          "catatan": "Tersedia untuk test drive"
+        }
+      }
+    ],
+    "spesifikasiUtama": [
+      { "label": "Jarak tempuh", "nilai": "Hingga 461 km (NEDC)" },
+      { "label": "Tenaga", "nilai": "155 kW (210 PS), torsi 288 Nm" },
+      { "label": "Baterai", "nilai": "LFP 60,9 kWh" },
+      { "label": "Pengisian cepat", "nilai": "DC 130 kW, 30 sampai 80 persen sekitar 28 menit" },
+      { "label": "Layar sentuh", "nilai": "13,2 inci" }
+    ],
+    "spesifikasiLengkap": [
+      {
+        "kelompok": "Performa",
+        "baris": [
+          { "label": "Jenis penggerak", "nilai": "Motor listrik tunggal, penggerak roda depan" },
+          { "label": "Tenaga maksimum", "nilai": "155 kW (210 PS)" },
+          { "label": "Torsi maksimum", "nilai": "288 Nm" },
+          { "label": "Akselerasi 0-100 km/jam", "nilai": "Sekitar 7,3 detik" }
+        ]
+      },
+      {
+        "kelompok": "Baterai dan Jarak Tempuh",
+        "baris": [
+          { "label": "Jenis baterai", "nilai": "LFP" },
+          { "label": "Kapasitas baterai", "nilai": "60,9 kWh" },
+          { "label": "Jarak tempuh", "nilai": "Hingga 461 km (NEDC)" },
+          { "label": "Pengisian cepat DC", "nilai": "Hingga 130 kW" },
+          { "label": "Waktu pengisian 30 sampai 80 persen", "nilai": "Sekitar 28 menit" },
+          { "label": "V2L", "nilai": "3,3 kW" }
+        ]
+      },
+      {
+        "kelompok": "Dimensi",
+        "baris": [
+          { "label": "Panjang x lebar x tinggi", "nilai": "4.380 x 1.860 x 1.650 mm" },
+          { "label": "Jarak sumbu roda", "nilai": "2.620 mm" },
+          { "label": "Ground clearance", "nilai": "200 mm" },
+          { "label": "Kapasitas penumpang", "nilai": "5 orang" },
+          { "label": "Bagasi", "nilai": "480 liter, 1.180 liter dengan kursi dilipat" },
+          { "label": "Frunk", "nilai": "35 liter" }
+        ]
+      },
+      {
+        "kelompok": "Eksterior",
+        "baris": [
+          { "label": "Velg", "nilai": "18 inci" },
+          { "label": "Atap", "nilai": "Panoramic glass roof 1,45 meter persegi dengan sunshade elektrik" },
+          { "label": "Pintu bagasi", "nilai": "Power tailgate elektrik" },
+          { "label": "Kaca depan samping", "nilai": "Dua lapis, peredam suara" }
+        ]
+      },
+      {
+        "kelompok": "Interior",
+        "baris": [
+          { "label": "Layar sentuh", "nilai": "13,2 inci" },
+          { "label": "Jok pengemudi", "nilai": "Elektrik 6 arah" },
+          { "label": "Jok penumpang depan", "nilai": "Elektrik 4 arah" },
+          { "label": "Ventilasi jok", "nilai": "Jok depan berventilasi" },
+          { "label": "Wireless charging", "nilai": "50W" },
+          { "label": "Audio", "nilai": "8 speaker" },
+          { "label": "Ambient light", "nilai": "64 warna" }
+        ]
+      },
+      {
+        "kelompok": "Keselamatan",
+        "baris": [
+          { "label": "Airbag", "nilai": "6 buah" },
+          { "label": "ADAS", "nilai": "17 fitur" },
+          { "label": "Kamera", "nilai": "540 derajat" }
+        ]
+      }
+    ],
+    "warna": [
+      { "nama": "Forest Green", "hex": "#2F4A3C" },
+      { "nama": "Jet Black", "hex": "#15181A" },
+      { "nama": "Pristine White", "hex": "#F2F4F3" },
+      { "nama": "Ivory Gray", "hex": "#C9C6BC" }
+    ],
+    "keunggulan": [
+      {
+        "judul": "Jarak tempuh harian yang lega",
+        "deskripsi": "Baterai LFP 60,9 kWh dengan jarak tempuh hingga 461 km NEDC, cukup untuk pemakaian beberapa hari di rute Gading Serpong ke Jakarta tanpa sering mengisi daya."
+      },
+      {
+        "judul": "Pengisian cepat sampai 130 kW",
+        "deskripsi": "Pada pengisian DC, kapasitas 30 sampai 80 persen ditempuh sekitar 28 menit, jadi berhenti mengisi daya tidak memakan waktu lama."
+      },
+      {
+        "judul": "Bisa menjadi sumber listrik",
+        "deskripsi": "Fitur V2L 3,3 kW memungkinkan mobil menyalakan peralatan listrik di luar kendaraan."
+      },
+      {
+        "judul": "Ruang bagasi dan frunk",
+        "deskripsi": "Bagasi 480 liter yang bisa dilipat menjadi 1.180 liter, ditambah frunk 35 liter di depan untuk barang kecil."
+      },
+      {
+        "judul": "Kabin yang tenang",
+        "deskripsi": "Kaca depan samping dua lapis peredam suara, panoramic glass roof 1,45 meter persegi dengan sunshade elektrik, dan jok depan berventilasi."
+      },
+      {
+        "judul": "Keselamatan lengkap",
+        "deskripsi": "Enam airbag, 17 fitur ADAS, dan kamera 540 derajat untuk membantu manuver di area padat."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Berapa harga OTR JAECOO J5 Premium?",
+        "a": "Rp 324.900.000 on the road. Estimasi cicilannya bisa dihitung Mahesa sesuai rencana uang muka dan tenor Anda."
+      },
+      {
+        "q": "Berapa jarak tempuh JAECOO J5 Premium sekali pengisian penuh?",
+        "a": "Hingga 461 km berdasarkan pengukuran NEDC dengan baterai LFP 60,9 kWh. Angka nyata di jalan bergantung pada gaya berkendara, beban, dan pemakaian pendingin kabin."
+      },
+      {
+        "q": "Berapa lama pengisian dayanya?",
+        "a": "Dengan pengisian cepat DC hingga 130 kW, kapasitas 30 sampai 80 persen ditempuh sekitar 28 menit."
+      },
+      {
+        "q": "Apakah JAECOO J5 Premium bisa saya test drive?",
+        "a": "Bisa. J5 Premium adalah satu satunya unit yang tersedia untuk test drive saat ini. Jadwal dan lokasinya bisa diatur lewat WhatsApp."
+      },
+      {
+        "q": "Warna apa saja yang tersedia?",
+        "a": "Forest Green, Jet Black, Pristine White, dan Ivory Gray. Ketersediaan warna per periode bisa dicek Mahesa lebih dulu sebelum Anda memesan."
+      },
+      {
+        "q": "Berapa lama masa garansi kendaraan dan baterainya?",
+        "a": "TODO: isi ketentuan garansi resmi kendaraan dan baterai sesuai kebijakan APM yang berlaku."
+      }
+    ]
+  },
+  {
+    "slug": "jaecoo-j7-shs",
+    "nama": "JAECOO J7 SHS",
+    "tipe": "SUV plug-in hybrid",
+    "ringkasan": "SUV plug-in hybrid dengan Super Hybrid System, mode listrik penuh hingga 100 km dan jarak tempuh gabungan lebih dari 1.300 km. Pilihan bagi yang ingin efisiensi listrik tanpa memikirkan jarak tempuh.",
+    "hargaMulai": 514900000,
+    "unggulan": false,
+    "varian": [
+      {
+        "nama": "SHS",
+        "hargaOtr": 514900000,
+        "testDrive": {
+          "tersedia": false,
+          "catatan": "Sedang tidak tersedia untuk test drive"
+        }
+      }
+    ],
+    "spesifikasiUtama": [
+      { "label": "Tenaga gabungan", "nilai": "Sekitar 301 hp, torsi 525 Nm" },
+      { "label": "Jarak tempuh gabungan", "nilai": "Lebih dari 1.300 km" },
+      { "label": "Mode listrik penuh", "nilai": "Hingga 100 km (NEDC)" },
+      { "label": "Hiburan", "nilai": "Layar 14,8 inci, audio Sony 12 speaker" },
+      { "label": "Keselamatan", "nilai": "8 airbag, 19 fitur ADAS" }
+    ],
+    "spesifikasiLengkap": [
+      {
+        "kelompok": "Performa",
+        "baris": [
+          { "label": "Sistem penggerak", "nilai": "Super Hybrid System, plug-in hybrid" },
+          { "label": "Mesin", "nilai": "1.5L TGDI Dedicated Hybrid Engine" },
+          { "label": "Tenaga mesin", "nilai": "105 kW (140 hp)" },
+          { "label": "Torsi mesin", "nilai": "215 Nm" },
+          { "label": "Motor listrik", "nilai": "150 kW (201 hp)" },
+          { "label": "Torsi motor listrik", "nilai": "310 Nm" },
+          { "label": "Tenaga gabungan", "nilai": "Sekitar 301 hp" },
+          { "label": "Torsi gabungan", "nilai": "525 Nm" },
+          { "label": "Transmisi", "nilai": "1DHT, Dedicated Hybrid Transmission" },
+          { "label": "Penggerak", "nilai": "Roda depan" },
+          { "label": "Efisiensi termal mesin", "nilai": "Hingga 44,5 persen" }
+        ]
+      },
+      {
+        "kelompok": "Baterai dan Jarak Tempuh",
+        "baris": [
+          { "label": "Jenis baterai", "nilai": "LFP" },
+          { "label": "Kapasitas baterai", "nilai": "18,3 kWh" },
+          { "label": "Jarak tempuh mode listrik", "nilai": "Hingga 100 km (NEDC)" },
+          { "label": "Kapasitas tangki bahan bakar", "nilai": "60 liter" },
+          { "label": "Jarak tempuh gabungan", "nilai": "Lebih dari 1.300 km" },
+          { "label": "Pengisian cepat DC", "nilai": "Hingga 40 kW" },
+          { "label": "Waktu pengisian 30 sampai 80 persen", "nilai": "Sekitar 20 menit" },
+          { "label": "V2L", "nilai": "3,3 kW" },
+          { "label": "Proteksi baterai", "nilai": "3 lapis" }
+        ]
+      },
+      {
+        "kelompok": "Dimensi",
+        "baris": [
+          { "label": "Panjang x lebar x tinggi", "nilai": "4.500 x 1.865 x 1.680 mm" },
+          { "label": "Jarak sumbu roda", "nilai": "2.672 mm" },
+          { "label": "Ground clearance", "nilai": "200 mm" },
+          { "label": "Kapasitas penumpang", "nilai": "5 orang" }
+        ]
+      },
+      {
+        "kelompok": "Eksterior",
+        "baris": [
+          { "label": "Velg", "nilai": "19 inci" },
+          { "label": "Atap", "nilai": "Panoramic sunroof 1,1 meter" },
+          { "label": "Pintu bagasi", "nilai": "Hands-free power tailgate" },
+          { "label": "Kaca", "nilai": "Dua lapis" }
+        ]
+      },
+      {
+        "kelompok": "Interior",
+        "baris": [
+          { "label": "Layar sentuh", "nilai": "14,8 inci" },
+          { "label": "Panel instrumen", "nilai": "Digital 10,25 inci" },
+          { "label": "Head-Up Display", "nilai": "Tersedia" },
+          { "label": "Audio", "nilai": "Sony 12 speaker" },
+          { "label": "Wireless charging", "nilai": "50W berpendingin" },
+          { "label": "Jok", "nilai": "Elektrik dengan memori dan ventilasi" }
+        ]
+      },
+      {
+        "kelompok": "Keselamatan",
+        "baris": [
+          { "label": "Airbag", "nilai": "8 buah" },
+          { "label": "ADAS", "nilai": "19 fitur, termasuk Curve Speed Assist" },
+          { "label": "Kamera", "nilai": "540 derajat" },
+          { "label": "Material bodi", "nilai": "Lebih dari 80 persen baja ultra high tensile" },
+          { "label": "Kekakuan torsional", "nilai": "Hingga 25.000 Nm/deg" }
+        ]
+      }
+    ],
+    "warna": [
+      { "nama": "Jet Black", "hex": "#15181A" },
+      { "nama": "Pristine White", "hex": "#F2F4F3" },
+      { "nama": "Moonlight Silver", "hex": "#B9BEC0" },
+      { "nama": "Stone Grey", "hex": "#7C817F" },
+      { "nama": "Pristine White Two Tone", "hex": "#F2F4F3", "hexAtap": "#15181A" }
+    ],
+    "keunggulan": [
+      {
+        "judul": "Jarak tempuh gabungan lebih dari 1.300 km",
+        "deskripsi": "Baterai LFP 18,3 kWh dipadu tangki 60 liter, sehingga perjalanan luar kota tidak perlu direncanakan di sekitar lokasi pengisian daya."
+      },
+      {
+        "judul": "Harian tanpa bahan bakar",
+        "deskripsi": "Mode listrik penuh hingga 100 km NEDC cukup untuk pemakaian harian di dalam kota, dan mesin baru bekerja saat dibutuhkan."
+      },
+      {
+        "judul": "Tenaga gabungan 301 hp",
+        "deskripsi": "Torsi gabungan 525 Nm lewat transmisi 1DHT, dengan efisiensi termal mesin hingga 44,5 persen."
+      },
+      {
+        "judul": "Kabin yang lengkap",
+        "deskripsi": "Layar sentuh 14,8 inci, panel instrumen digital 10,25 inci, Head-Up Display, dan audio Sony 12 speaker."
+      },
+      {
+        "judul": "Struktur bodi yang kaku",
+        "deskripsi": "Lebih dari 80 persen bodi memakai baja ultra high tensile dengan kekakuan torsional hingga 25.000 Nm/deg, ditambah proteksi baterai tiga lapis."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Berapa harga OTR JAECOO J7 SHS?",
+        "a": "Rp 514.900.000 on the road. Estimasi cicilannya bisa dihitung Mahesa sesuai rencana uang muka dan tenor Anda."
+      },
+      {
+        "q": "Apakah JAECOO J7 SHS harus diisi daya?",
+        "a": "Tidak harus, karena mobil tetap berjalan dengan mesin bensin. Namun dengan mengisi daya, mode listrik penuh hingga 100 km NEDC bisa dipakai untuk kebutuhan harian."
+      },
+      {
+        "q": "Berapa lama pengisian dayanya?",
+        "a": "Dengan pengisian cepat DC hingga 40 kW, kapasitas 30 sampai 80 persen ditempuh sekitar 20 menit."
+      },
+      {
+        "q": "Apakah J7 SHS bisa saya test drive?",
+        "a": "Untuk saat ini unit J7 SHS sedang tidak tersedia untuk test drive. Silakan hubungi Mahesa lewat WhatsApp agar dikabari begitu unitnya tersedia."
+      },
+      {
+        "q": "Berapa lama masa garansi kendaraan dan baterainya?",
+        "a": "TODO: isi ketentuan garansi resmi kendaraan dan baterai sesuai kebijakan APM yang berlaku."
+      }
+    ]
+  },
+  {
+    "slug": "jaecoo-j8-shs-ardis",
+    "nama": "JAECOO J8 SHS ARDIS",
+    "tipe": "SUV plug-in hybrid kelas atas",
+    "ringkasan": "SUV plug-in hybrid tujuh penumpang dengan sistem penggerak segala medan ARDIS, CDC Magnetic Suspension, dan tenaga gabungan sekitar 530 hp. Pilihan teratas di jajaran JAECOO.",
+    "hargaMulai": 838000000,
+    "unggulan": false,
+    "varian": [
+      {
+        "nama": "SHS ARDIS",
+        "hargaOtr": 838000000,
+        "testDrive": {
+          "tersedia": false,
+          "catatan": "Sedang tidak tersedia untuk test drive"
+        }
+      }
+    ],
+    "spesifikasiUtama": [
+      { "label": "Tenaga gabungan", "nilai": "395 kW, sekitar 530 hp, torsi 650 Nm" },
+      { "label": "Akselerasi", "nilai": "0-100 km/jam sekitar 5,4 detik" },
+      { "label": "Mode listrik penuh", "nilai": "180 km" },
+      { "label": "Kapasitas", "nilai": "6 sampai 7 penumpang, captain seat baris kedua" },
+      { "label": "Suspensi", "nilai": "CDC Magnetic Suspension" }
+    ],
+    "spesifikasiLengkap": [
+      {
+        "kelompok": "Performa",
+        "baris": [
+          { "label": "Sistem penggerak", "nilai": "Super Hybrid System dengan 3DHT" },
+          { "label": "Mesin", "nilai": "1.5L TGDI Dedicated Hybrid Engine 105 kW" },
+          { "label": "Tenaga gabungan", "nilai": "395 kW, sekitar 530 hp" },
+          { "label": "Torsi gabungan", "nilai": "650 Nm" },
+          { "label": "Akselerasi 0-100 km/jam", "nilai": "Sekitar 5,4 detik" },
+          { "label": "Mode berkendara", "nilai": "ARDIS 6 mode: Economic, Normal, Sport, Snow, Sand, Offroad" },
+          { "label": "Suspensi", "nilai": "CDC Magnetic Suspension, memindai kondisi jalan 100 kali per detik" }
+        ]
+      },
+      {
+        "kelompok": "Baterai dan Jarak Tempuh",
+        "baris": [
+          { "label": "Jenis baterai", "nilai": "LFP" },
+          { "label": "Kapasitas baterai", "nilai": "34,46 kWh" },
+          { "label": "Jarak tempuh mode listrik", "nilai": "180 km" },
+          { "label": "Kapasitas tangki bahan bakar", "nilai": "70 liter" },
+          { "label": "Jarak tempuh gabungan", "nilai": "Lebih dari 1.400 km" }
+        ]
+      },
+      {
+        "kelompok": "Dimensi",
+        "baris": [
+          { "label": "Panjang x lebar x tinggi", "nilai": "4.820 x 1.930 x 1.710 mm" },
+          { "label": "Jarak sumbu roda", "nilai": "2.820 mm" },
+          { "label": "Kapasitas penumpang", "nilai": "6 sampai 7 orang" },
+          { "label": "Bagasi", "nilai": "738 liter, hingga 2.021 liter dengan kursi dilipat" }
+        ]
+      },
+      {
+        "kelompok": "Eksterior",
+        "baris": [
+          { "label": "Velg", "nilai": "20 inci dua warna" },
+          { "label": "Ban", "nilai": "Michelin" },
+          { "label": "Atap", "nilai": "Panoramic sunroof" }
+        ]
+      },
+      {
+        "kelompok": "Interior",
+        "baris": [
+          { "label": "Material jok", "nilai": "Kulit Nappa" },
+          { "label": "Plafon", "nilai": "Suede" },
+          { "label": "Baris kedua", "nilai": "Captain seat berventilasi" },
+          { "label": "Jok depan", "nilai": "Penghangat, ventilasi, dan pijat" },
+          { "label": "Audio", "nilai": "Sony 14 speaker" },
+          { "label": "Ambient light", "nilai": "256 warna" },
+          { "label": "Wireless charging", "nilai": "50W" },
+          { "label": "Kaca", "nilai": "Dua lapis peredam suara" }
+        ]
+      },
+      {
+        "kelompok": "Keselamatan",
+        "baris": [
+          { "label": "Airbag", "nilai": "10 buah" },
+          { "label": "ADAS", "nilai": "19 fitur, termasuk Adaptive Cruise Control, Emergency Lane Keeping, Traffic Jam Assist, Intelligent Avoidance System, dan Automatic Emergency Braking" },
+          { "label": "Material bodi", "nilai": "85 persen material ultra high tensile" }
+        ]
+      }
+    ],
+    "warna": [
+      { "nama": "Pristine White Two Tone", "hex": "#F2F4F3", "hexAtap": "#15181A" },
+      { "nama": "Jet Black", "hex": "#15181A" },
+      { "nama": "Lunar Silver Two Tone", "hex": "#C2C7C9", "hexAtap": "#15181A" },
+      { "nama": "Stone Gray Two Tone", "hex": "#7C817F", "hexAtap": "#15181A" }
+    ],
+    "keunggulan": [
+      {
+        "judul": "Tenaga gabungan sekitar 530 hp",
+        "deskripsi": "Torsi gabungan 650 Nm lewat sistem 3DHT, dengan akselerasi 0-100 km/jam sekitar 5,4 detik."
+      },
+      {
+        "judul": "ARDIS untuk berbagai kondisi jalan",
+        "deskripsi": "Enam mode berkendara, dari Economic sampai Offroad, dipadu CDC Magnetic Suspension yang memindai kondisi jalan 100 kali per detik."
+      },
+      {
+        "judul": "Ruang untuk keluarga besar",
+        "deskripsi": "Kapasitas 6 sampai 7 penumpang dengan captain seat berventilasi di baris kedua dan bagasi 738 liter yang bisa dilipat hingga 2.021 liter."
+      },
+      {
+        "judul": "Kabin kelas atas",
+        "deskripsi": "Kulit Nappa, plafon suede, jok depan dengan penghangat, ventilasi, dan pijat, serta audio Sony 14 speaker."
+      },
+      {
+        "judul": "Jarak tempuh gabungan lebih dari 1.400 km",
+        "deskripsi": "Baterai LFP 34,46 kWh memberi mode listrik penuh 180 km, ditambah tangki 70 liter untuk perjalanan jauh."
+      },
+      {
+        "judul": "Perlindungan menyeluruh",
+        "deskripsi": "Sepuluh airbag, 19 fitur ADAS, dan bodi dengan 85 persen material ultra high tensile."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Berapa harga OTR JAECOO J8 SHS ARDIS?",
+        "a": "Rp 838.000.000 on the road. Estimasi cicilannya bisa dihitung Mahesa sesuai rencana uang muka dan tenor Anda."
+      },
+      {
+        "q": "Berapa kapasitas penumpang JAECOO J8 SHS ARDIS?",
+        "a": "Enam sampai tujuh penumpang, dengan captain seat berventilasi di baris kedua dan bagasi 738 liter yang bisa dilipat hingga 2.021 liter."
+      },
+      {
+        "q": "Apa itu ARDIS?",
+        "a": "ARDIS adalah All-Road Drive Intelligent System dengan enam mode berkendara: Economic, Normal, Sport, Snow, Sand, dan Offroad, yang bekerja bersama CDC Magnetic Suspension."
+      },
+      {
+        "q": "Apakah J8 SHS ARDIS bisa saya test drive?",
+        "a": "Untuk saat ini unit J8 SHS ARDIS sedang tidak tersedia untuk test drive. Silakan hubungi Mahesa lewat WhatsApp agar dikabari begitu unitnya tersedia."
+      },
+      {
+        "q": "Berapa lama masa garansi kendaraan dan baterainya?",
+        "a": "TODO: isi ketentuan garansi resmi kendaraan dan baterai sesuai kebijakan APM yang berlaku."
+      }
+    ]
+  }
+]
