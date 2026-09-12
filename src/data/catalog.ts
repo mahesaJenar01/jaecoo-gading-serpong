@@ -22,10 +22,6 @@ import type {
  * 2. Paket tidak menyimpan total harga satuan. Totalnya dijumlahkan dari
  *    produkId tiap isi paket, jadi harga coret di kartu paket selalu cocok
  *    dengan harga di katalog satuan.
- *
- * Harga di halaman aksesoris bukan harga mati, tetapi hal itu sengaja tidak
- * ditawarkan sendiri di halaman. catatanHarga di packages.json hanya dipakai
- * llms-full.txt dan jawaban FAQ, bukan sebagai bilah atau catatan di kartu.
  */
 
 /**
@@ -37,13 +33,6 @@ export const otrAcuan = modelUnggulan.hargaMulai;
 export const namaUnitAcuan = modelUnggulan.nama;
 
 export const limitedOffer = packagesData.limitedOffer as LimitedOffer;
-
-/**
- * Kalimat baku bahwa harga aksesoris masih bisa dinegosiasi. Tidak dirender
- * di halaman mana pun: hanya ikut ke llms-full.txt. Di halaman, hal ini
- * hanya disebut pada jawaban FAQ, yaitu ketika pengunjung menanyakannya.
- */
-export const catatanHarga: string = packagesData.catatanHarga;
 
 export const kategoriProduk = productsData.kategori as string[];
 

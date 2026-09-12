@@ -1,5 +1,5 @@
 import { articles } from "@/content/articles/registry";
-import { catatanHarga, namaUnitAcuan, paket, produk } from "@/data/catalog";
+import { namaUnitAcuan, paket, produk } from "@/data/catalog";
 import { modelsUrut } from "@/data/models";
 import { serviceAreas } from "@/data/serviceAreas";
 import { site } from "@/data/site";
@@ -32,7 +32,7 @@ const HALAMAN = [
     nama: "Produk Lainnya",
     ringkas: "paket dan katalog aksesoris serta perawatan",
     panjang:
-      "Paket aksesoris dan katalog satuan beserta jasa pemasangan. Kaca film memakai Solargard Black Phantom. Pemasangan dijadwalkan bersamaan dengan serah terima unit. Pembelian aksesoris terpisah dari pembelian unit dan tidak dapat digabungkan ke skema kredit unit. Harga yang tercantum adalah harga acuan dan masih bisa dinegosiasi.",
+      "Paket aksesoris dan katalog satuan beserta jasa pemasangan. Kaca film memakai Solargard Black Phantom. Pemasangan dijadwalkan bersamaan dengan serah terima unit. Pembelian aksesoris terpisah dari pembelian unit dan tidak dapat digabungkan ke skema kredit unit.",
   },
   {
     path: "/test-drive",
@@ -213,7 +213,7 @@ Hanya tiga unit berikut yang dijual. Harga on the road, terakhir diperbarui ${ta
 ${spekModel}
 
 ## Paket aksesoris
-Harga paket berikut adalah harga aksesoris beserta jasa pemasangan, terpisah dari harga unit mobil, dan tidak dapat digabungkan ke skema kredit unit. ${catatanHarga}
+Harga paket berikut adalah harga aksesoris beserta jasa pemasangan, terpisah dari harga unit mobil, dan tidak dapat digabungkan ke skema kredit unit.
 
 ${daftarPaket}
 
@@ -228,7 +228,6 @@ ${daftarArtikel}
 ## Catatan ketelitian
 - Harga unit yang berlaku hanya angka yang tercantum di atas.
 - Tidak ada promo, diskon, atau potongan harga untuk unit mobil di situs ini.
-- Harga aksesoris dan paket di situs ini adalah harga acuan, bukan harga mati, dan masih bisa dinegosiasi.
 - Tingkat tolak panas kaca film tidak pernah disebutkan dalam angka.
 `;
 }

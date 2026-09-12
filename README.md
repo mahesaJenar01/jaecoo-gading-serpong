@@ -22,7 +22,7 @@ npm run typecheck  # tsc --noEmit
 src/data/          Sumber seluruh isi situs. Ubah di sini, bukan di komponen.
   site.ts          Info bisnis, kontak, alamat, jam, sosial, tanggal harga
   models.json      Tiga model JAECOO, harga OTR, spesifikasi, warna, FAQ
-  packages.json    Tiga paket aksesoris, catatanHarga, limitedOffer
+  packages.json    Tiga paket aksesoris + limitedOffer
   products.json    Katalog aksesoris satuan beserta harganya
   faq.json         FAQ beranda
   serviceAreas.ts  Area layanan
@@ -68,12 +68,6 @@ melainkan `rateOtr` sebesar `0.0208`. Nominalnya dihitung dari harga OTR unit
 unggulan, sehingga ikut berubah sendiri ketika harga OTR di `models.json`
 diperbarui.
 
-**Kalimat negosiasi harga.** `catatanHarga` di `packages.json` sengaja tidak
-dirender di halaman mana pun, hanya ikut ke `llms-full.txt`. Bahwa harga
-masih bisa dibicarakan hanya disebut pada jawaban FAQ `/produk-lainnya`,
-yaitu ketika pengunjung memang menanyakannya, bukan ditawarkan sendiri di
-atas daftar harga.
-
 **Artikel baru.** Salin folder artikel yang ada di `src/content/articles/`,
 ganti slug, isi `SECTIONS` dan `meta`, lalu tambahkan satu baris di
 `registry.ts`. Halaman indeks, sitemap, `llms.txt`, dan artikel terkait ikut
@@ -107,10 +101,10 @@ langsung di komponen.
    Kaca film yang ditawarkan adalah Solargard tipe Black Phantom, dan
    manfaatnya cukup disebut sebagai kabin yang jadi lebih adem karena tolak
    panasnya tinggi.
-9. Harga aksesoris di `/produk-lainnya` adalah harga acuan, bukan harga mati,
-   tetapi jangan menawarkan negosiasi sendiri di halaman. Cukup dijawab di
-   FAQ bila ditanyakan. Jangan menambah bilah atau catatan harga acuan di
-   atas daftar paket maupun di kartu paket.
+9. Jangan pernah menulis bahwa harga masih bisa dinegosiasi, di halaman mana
+   pun dan dalam bentuk apa pun: bilah, catatan di kartu, jawaban FAQ, atau
+   `llms.txt`. Tidak ada "harga acuan", "belum final", dan "masih bisa
+   dibicarakan". Harga yang tercantum disebut apa adanya sebagai harga.
 10. Situs ini menyebut Mahesa dengan namanya, bukan "saya". Pengecualiannya
     hanya teks yang memang suara pengunjung: pertanyaan pada FAQ dan pesan
     WhatsApp yang sudah terisi di tombol chat.

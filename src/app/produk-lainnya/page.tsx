@@ -49,10 +49,6 @@ const faqProduk: Faq[] = [
     a: "Ada. Ketentuan dan masa berlakunya disampaikan Mahesa sebelum pengerjaan dimulai, karena berbeda beda tergantung item yang dipasang. Bila ada yang kurang pas setelah dipasang, kabari Mahesa untuk dirapikan kembali.",
   },
   {
-    q: "Apakah harga di halaman ini sudah final?",
-    a: "Belum. Angka yang tercantum adalah harga acuan supaya Anda punya gambaran sejak awal, dan masih bisa dibicarakan lagi. Sebutkan paket atau item yang Anda incar lewat WhatsApp, nanti Mahesa bantu carikan angka terbaik yang masih bisa diberikan.",
-  },
-  {
     q: "Kaca filmnya pakai merek apa?",
     a: "Solargard tipe Black Phantom, untuk kaca depan, kaca samping, kaca belakang, maupun kaca atap. Tingkat tolak panasnya tinggi, jadi kabin terasa jauh lebih adem, terutama saat mobil parkir lama di tempat terbuka.",
   },

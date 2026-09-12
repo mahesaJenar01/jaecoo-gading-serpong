@@ -1,6 +1,5 @@
 {
   "_catatan": "Harga paket adalah harga promo yang sudah dipotong dari total bila seluruh isinya dibeli satuan. Total satuan tidak ditulis di sini, melainkan dihitung src/data/catalog.ts dari produkId tiap isi paket, supaya angkanya tidak pernah meleset dari products.json.",
-  "catatanHarga": "Harga di halaman ini belum final dan masih bisa dibicarakan lagi. Sebutkan paket atau item yang Anda incar lewat WhatsApp, nanti Mahesa bantu carikan angka terbaiknya.",
   "limitedOffer": {
     "enabled": false,
     "label": "TODO: isi kalimat penawaran pemasangan aksesoris periode ini",
