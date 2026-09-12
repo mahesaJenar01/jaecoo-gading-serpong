@@ -22,8 +22,8 @@ npm run typecheck  # tsc --noEmit
 src/data/          Sumber seluruh isi situs. Ubah di sini, bukan di komponen.
   site.ts          Info bisnis, kontak, alamat, jam, sosial, tanggal harga
   models.json      Tiga model JAECOO, harga OTR, spesifikasi, warna, FAQ
-  packages.json    Tiga paket aksesoris + limitedOffer   (masih data contoh)
-  products.json    Katalog aksesoris satuan              (masih data contoh)
+  packages.json    Tiga paket aksesoris, catatanHarga, limitedOffer
+  products.json    Katalog aksesoris satuan beserta harganya
   faq.json         FAQ beranda
   serviceAreas.ts  Area layanan
   delivery.ts      Daftar foto serah terima di public/delivery
@@ -57,6 +57,21 @@ tersedia tetap tampil dalam keadaan nonaktif beserta catatannya.
 `enabled` diisi `false`, bilah penawaran beserta seluruh elemen terkait tidak
 dirender sama sekali.
 
+**Harga aksesoris.** Ubah `hargaMulai` di `products.json`. Harga paket di
+`packages.json` hanya berisi `harga`, yaitu harga setelah dipotong. Total
+harga satuannya, yang tampil sebagai angka coret, dijumlahkan sendiri oleh
+`catalog.ts` dari `produkId` tiap isi paket, jadi angka coret tidak pernah
+meleset dari katalog.
+
+Satu item punya perlakuan khusus: asuransi all risk tidak menyimpan nominal,
+melainkan `rateOtr` sebesar `0.0208`. Nominalnya dihitung dari harga OTR unit
+unggulan, sehingga ikut berubah sendiri ketika harga OTR di `models.json`
+diperbarui.
+
+**Kalimat negosiasi harga.** Ubah `catatanHarga` di `packages.json`. Kalimat
+itu tampil di halaman `/produk-lainnya`, di kartu ringkas aksesoris beranda,
+dan ikut ke `llms-full.txt`.
+
 **Artikel baru.** Salin folder artikel yang ada di `src/content/articles/`,
 ganti slug, isi `SECTIONS` dan `meta`, lalu tambahkan satu baris di
 `registry.ts`. Halaman indeks, sitemap, `llms.txt`, dan artikel terkait ikut
@@ -81,11 +96,20 @@ langsung di komponen.
    disebut sebagai simulasi. Jangan menulis angka cicilan langsung di
    komponen, dan jangan menyebutnya angka final leasing. Provisi ikut
    dicicil di angsuran tetapi tidak pernah ditampilkan sebagai baris sendiri.
+   Pada skema ADDM, angsuran bulan pertama sudah ikut dibayar di TDP, jadi
+   bulan yang masih ditanggung konsumen berkurang satu (`sisaAngsuran`).
+   Pembagi angsurannya tetap seluruh tenor.
 7. Angka pajak dan biaya kepemilikan tahunan tidak ditampilkan di halaman
    model. Jangan mengisinya dengan perkiraan.
-8. Situs ini menyebut Mahesa dengan namanya, bukan "saya". Pengecualiannya
-   hanya teks yang memang suara pengunjung: pertanyaan pada FAQ dan pesan
-   WhatsApp yang sudah terisi di tombol chat.
+8. Tingkat tolak panas kaca film tidak boleh pernah disebutkan dalam angka.
+   Kaca film yang ditawarkan adalah Solargard tipe Black Phantom, dan
+   manfaatnya cukup disebut sebagai kabin yang jadi lebih adem karena tolak
+   panasnya tinggi.
+9. Harga aksesoris di `/produk-lainnya` adalah harga acuan, bukan harga mati.
+   Setiap tempat yang menyebutnya wajib menyertakan `catatanHarga`.
+10. Situs ini menyebut Mahesa dengan namanya, bukan "saya". Pengecualiannya
+    hanya teks yang memang suara pengunjung: pertanyaan pada FAQ dan pesan
+    WhatsApp yang sudah terisi di tombol chat.
 
 ## Deploy ke Vercel
 

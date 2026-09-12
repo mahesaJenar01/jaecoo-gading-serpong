@@ -1,5 +1,5 @@
 import { articles } from "@/content/articles/registry";
-import { paket, produk } from "@/data/catalog";
+import { catatanHarga, namaUnitAcuan, paket, produk } from "@/data/catalog";
 import { modelsUrut } from "@/data/models";
 import { serviceAreas } from "@/data/serviceAreas";
 import { site } from "@/data/site";
@@ -32,7 +32,7 @@ const HALAMAN = [
     nama: "Produk Lainnya",
     ringkas: "paket dan katalog aksesoris serta perawatan",
     panjang:
-      "Paket aksesoris dan katalog satuan beserta jasa pemasangan dan perawatan. Pemasangan dijadwalkan bersamaan dengan serah terima unit. Pembelian aksesoris terpisah dari pembelian unit dan tidak dapat digabungkan ke skema kredit unit.",
+      "Paket aksesoris dan katalog satuan beserta jasa pemasangan. Kaca film memakai Solargard Black Phantom. Pemasangan dijadwalkan bersamaan dengan serah terima unit. Pembelian aksesoris terpisah dari pembelian unit dan tidak dapat digabungkan ke skema kredit unit. Harga yang tercantum adalah harga acuan dan masih bisa dinegosiasi.",
   },
   {
     path: "/test-drive",
@@ -153,14 +153,20 @@ Pilihan warna: ${warna}`;
   const daftarPaket = paket
     .map(
       (p) =>
-        `- ${p.nama}: ${rupiah(p.harga)}, estimasi pengerjaan ${p.estimasiPengerjaan}. ${p.cocokUntuk}`,
+        `- ${p.nama}: ${rupiah(p.harga)}, dari ${rupiah(
+          p.totalSatuan,
+        )} bila isinya dibeli satuan. Estimasi pengerjaan ${
+          p.estimasiPengerjaan
+        }. ${p.cocokUntuk} Isi: ${p.isi.map((i) => i.nama).join("; ")}.`,
     )
     .join("\n");
 
   const kategoriRingkas = Array.from(new Set(produk.map((p) => p.kategori)))
     .map((k) => {
       const items = produk.filter((p) => p.kategori === k);
-      return `- ${k}: ${items.map((i) => i.nama).join(", ")}`;
+      return `- ${k}: ${items
+        .map((i) => `${i.nama} ${rupiah(i.hargaMulai)}`)
+        .join(", ")}`;
     })
     .join("\n");
 
@@ -207,11 +213,13 @@ Hanya tiga unit berikut yang dijual. Harga on the road, terakhir diperbarui ${ta
 ${spekModel}
 
 ## Paket aksesoris
-Harga paket berikut adalah harga aksesoris beserta jasa pemasangan, terpisah dari harga unit mobil, dan tidak dapat digabungkan ke skema kredit unit. Data paket dan katalog masih berupa contoh.
+Harga paket berikut adalah harga aksesoris beserta jasa pemasangan, terpisah dari harga unit mobil, dan tidak dapat digabungkan ke skema kredit unit. ${catatanHarga}
 
 ${daftarPaket}
 
 ## Katalog aksesoris satuan
+Kaca film memakai merek Solargard tipe Black Phantom, dipilih karena tingkat tolak panasnya tinggi sehingga kabin terasa lebih adem. Premi asuransi all risk dihitung 2,08 persen dari harga OTR, dan angka yang tercantum memakai harga OTR ${namaUnitAcuan} sebagai acuan. Kelir two tone hanya tersedia untuk warna Pristine White dan Ivory Gray.
+
 ${kategoriRingkas}
 
 ## Artikel
@@ -220,6 +228,7 @@ ${daftarArtikel}
 ## Catatan ketelitian
 - Harga unit yang berlaku hanya angka yang tercantum di atas.
 - Tidak ada promo, diskon, atau potongan harga untuk unit mobil di situs ini.
-- Sebagian data pada halaman aksesoris masih berupa contoh dan akan diganti.
+- Harga aksesoris dan paket di situs ini adalah harga acuan, bukan harga mati, dan masih bisa dinegosiasi.
+- Tingkat tolak panas kaca film tidak pernah disebutkan dalam angka.
 `;
 }

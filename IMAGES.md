@@ -107,20 +107,16 @@ mendekati warna sebenarnya.
 | `produk-{id}.jpg` | Kartu katalog satuan | 4/3 | 800 x 600 | {Nama produk}, kategori {kategori} |
 | `hasil-kaca-film-sebelum.jpg` | Blok Hasil pengerjaan | 4/3 | 1000 x 750 | Kondisi sebelum pengerjaan kaca film |
 | `hasil-kaca-film-sesudah.jpg` | Blok Hasil pengerjaan | 4/3 | 1000 x 750 | Hasil setelah pengerjaan kaca film |
-| `hasil-coating-sebelum.jpg` | Blok Hasil pengerjaan | 4/3 | 1000 x 750 | Kondisi sebelum pengerjaan coating bodi |
-| `hasil-coating-sesudah.jpg` | Blok Hasil pengerjaan | 4/3 | 1000 x 750 | Hasil setelah pengerjaan coating bodi |
+| `hasil-nano-coating-sebelum.jpg` | Blok Hasil pengerjaan | 4/3 | 1000 x 750 | Kondisi sebelum pengerjaan nano coating |
+| `hasil-nano-coating-sesudah.jpg` | Blok Hasil pengerjaan | 4/3 | 1000 x 750 | Hasil setelah pengerjaan nano coating |
 
-`{id}` mengikuti kolom `id` di `src/data/products.json`. Saat ini ada 19 item:
+`{id}` mengikuti kolom `id` di `src/data/products.json`. Saat ini ada 9 item:
 
-`kaca-film-depan-samping`, `kaca-film-menyeluruh`, `coating-bodi-9h`,
-`ppf-depan`, `anti-karat-kolong`, `karpet-dasar-custom`,
-`cover-jok-kulit-sintetis`, `tirai-kaca-samping`, `organizer-bagasi`,
-`talang-air-4-pintu`, `roof-rail-crossbar`, `side-step-samping`, `mud-guard`,
-`upgrade-speaker-depan`, `subwoofer-aktif`, `peredam-4-pintu`,
-`cuci-poles-bodi`, `detailing-interior`, `coating-pelek`.
+`kaca-film-depan-samping-belakang`, `kaca-film-atas`, `nano-coating-3-layer`,
+`asuransi-all-risk-1-tahun`, `screen-protector`, `reclining-second-seat`,
+`ban-serep`, `two-tone`, `wall-charging`.
 
-Katalog ini masih data contoh. Bila daftar produknya berubah, daftar fotonya
-ikut berubah.
+Bila daftar produknya berubah, daftar fotonya ikut berubah.
 
 ## 5. Artikel
 
@@ -154,11 +150,11 @@ galeri di halaman Tentang memakai foto serah terima yang sama dengan beranda.
 | Kartu model dan blok unggulan | 4 |
 | Galeri tiga halaman model | 15 |
 | Foto per warna | 13 |
-| Katalog aksesoris | 19 |
+| Katalog aksesoris | 9 |
 | Hasil pengerjaan sebelum dan sesudah | 4 |
 | Thumbnail artikel | 2 |
 | Profil dan galeri kegiatan | 0, sudah terpasang |
-| **Total** | **60** |
+| **Total** | **50** |
 
 Bila ingin bertahap, urutan prioritasnya: hero beranda, tiga foto kartu model,
 foto utama tiga halaman model, lalu sisanya.

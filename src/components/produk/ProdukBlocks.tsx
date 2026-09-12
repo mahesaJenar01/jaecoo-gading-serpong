@@ -81,7 +81,7 @@ export function WorkflowSteps() {
 
 const hasil = [
   { id: "kaca-film", label: "Kaca film" },
-  { id: "coating", label: "Coating bodi" },
+  { id: "nano-coating", label: "Nano coating" },
 ];
 
 /** Grid sebelum dan sesudah untuk kaca film dan coating. */

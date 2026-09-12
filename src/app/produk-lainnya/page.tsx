@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
-import { PackageCards, PackageOfferBar } from "@/components/produk/PackageCards";
+import {
+  PackageCards,
+  PackageOfferBar,
+  PriceNoteBar,
+} from "@/components/produk/PackageCards";
 import { PackageComparison } from "@/components/produk/PackageComparison";
 import { ProductCard } from "@/components/produk/ProductCard";
 import {
@@ -15,7 +19,7 @@ import { PillFilter } from "@/components/ui/PillFilter";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { WaButton } from "@/components/wa/WaButton";
-import { kategoriProduk, produk } from "@/data/catalog";
+import { kategoriProduk, namaUnitAcuan, produk } from "@/data/catalog";
 import type { Faq } from "@/data/types";
 import { waContext } from "@/lib/wa";
 import { pageMetadata } from "@/lib/seo";
@@ -23,7 +27,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Aksesoris dan Perawatan Mobil, Paket dan Katalog Satuan",
   description:
-    "Paket aksesoris dan katalog satuan untuk mobil JAECOO Anda: kaca film, coating, interior, audio, dan perawatan. Dipasang rapi dan dijadwalkan bersamaan dengan serah terima unit.",
+    "Paket aksesoris untuk mobil JAECOO Anda: kaca film Solargard Black Phantom, nano coating 3 layer, asuransi all risk, ban serep, dan lainnya. Dipasang rapi dan dijadwalkan bersamaan dengan serah terima unit.",
   path: "/produk-lainnya",
 });
 
@@ -42,15 +46,27 @@ const faqProduk: Faq[] = [
   },
   {
     q: "Berapa lama pengerjaannya?",
-    a: "Estimasi waktu tercantum di masing masing paket, mulai dari satu sampai tiga hari kerja. Untuk item satuan, waktunya disampaikan Mahesa saat konsultasi.",
+    a: "Estimasi waktu tercantum di masing masing paket, satu sampai dua hari kerja. Untuk item satuan, waktunya disampaikan Mahesa saat konsultasi.",
   },
   {
     q: "Apakah ada garansi pemasangan?",
-    a: "Ada, dan masa berlakunya tercantum pada masing masing paket. Bila ada yang kurang pas setelah dipasang, kabari Mahesa untuk dirapikan kembali.",
+    a: "Ada. Ketentuan dan masa berlakunya disampaikan Mahesa sebelum pengerjaan dimulai, karena berbeda beda tergantung item yang dipasang. Bila ada yang kurang pas setelah dipasang, kabari Mahesa untuk dirapikan kembali.",
   },
   {
     q: "Apakah harga di halaman ini sudah final?",
-    a: "TODO: pastikan lebih dulu kebijakan harga dan ketentuan yang berlaku, lalu ganti jawaban ini. Seluruh harga paket dan katalog di halaman ini masih data contoh.",
+    a: "Belum. Angka yang tercantum adalah harga acuan supaya Anda punya gambaran sejak awal, dan masih bisa dibicarakan lagi. Sebutkan paket atau item yang Anda incar lewat WhatsApp, nanti Mahesa bantu carikan angka terbaik yang masih bisa diberikan.",
+  },
+  {
+    q: "Kaca filmnya pakai merek apa?",
+    a: "Solargard tipe Black Phantom, untuk kaca depan, kaca samping, kaca belakang, maupun kaca atap. Tingkat tolak panasnya tinggi, jadi kabin terasa jauh lebih adem, terutama saat mobil parkir lama di tempat terbuka.",
+  },
+  {
+    q: "Kenapa harga asuransi all risk bisa berbeda beda?",
+    a: `Karena preminya dihitung dari harga on the road unit, yaitu 2,08 persen untuk perlindungan satu tahun. Angka yang tercantum di halaman ini memakai harga OTR ${namaUnitAcuan} sebagai acuan, jadi bila Anda mengambil unit lain angkanya ikut menyesuaikan.`,
+  },
+  {
+    q: "Kelir two tone bisa untuk semua warna?",
+    a: "Belum. Untuk saat ini pengerjaan two tone hanya tersedia untuk unit warna Pristine White dan Ivory Gray.",
   },
 ];
 
@@ -73,11 +89,12 @@ export default function ProdukLainnyaPage() {
         <SectionHeading
           id="paket-aksesoris"
           title="Paket aksesoris"
-          description="Tiga paket dengan isi yang berbeda. Harga di bawah adalah harga paket beserta jasa pemasangannya."
+          description="Tiga paket dengan isi yang berbeda. Harga di bawah adalah harga paket beserta jasa pemasangannya, dan sudah lebih murah dibanding membeli isinya satuan."
         />
 
-        <div className="mt-6">
+        <div className="mt-6 flex flex-col gap-3">
           <PackageOfferBar />
+          <PriceNoteBar />
         </div>
 
         <div className="mt-6 md:mt-8">
@@ -102,6 +119,10 @@ export default function ProdukLainnyaPage() {
           title="Katalog satuan"
           description="Bila Anda hanya butuh beberapa item, ambil satuan saja. Saring berdasarkan kategori untuk mempercepat pencarian."
         />
+
+        <div className="mt-6">
+          <PriceNoteBar />
+        </div>
 
         <div className="mt-8">
           <PillFilter

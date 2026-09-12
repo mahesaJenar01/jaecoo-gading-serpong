@@ -43,10 +43,16 @@ const persen = (rate: number) =>
 export function KreditSimulator({
   units,
   sumber,
+  perbandinganTenor = true,
 }: {
   units: UnitSimulasi[];
   /** Nama halaman asal, ikut ke pesan WhatsApp. */
   sumber: string;
+  /**
+   * Tabel perbandingan TDP dan angsuran antar tenor. Dimatikan di halaman
+   * Kredit supaya halaman itu fokus pada satu skema yang sedang dipilih.
+   */
+  perbandinganTenor?: boolean;
 }) {
   const [unitIdx, setUnitIdx] = useState(0);
   const [dp, setDp] = useState<number>(DP_STANDAR);
@@ -57,7 +63,9 @@ export function KreditSimulator({
   const unit = units[unitIdx] ?? units[0];
   const dasar = { hargaOtr: unit.hargaOtr, persenDp: dp, asuransi, skema };
   const sim = simulasiKredit({ ...dasar, tenor });
-  const perTenor = TENOR_OPSI.map((t) => simulasiKredit({ ...dasar, tenor: t }));
+  const perTenor = perbandinganTenor
+    ? TENOR_OPSI.map((t) => simulasiKredit({ ...dasar, tenor: t }))
+    : [];
 
   const labelAsuransi =
     ASURANSI_OPSI.find((a) => a.nilai === asuransi)?.label ?? asuransi;
@@ -181,7 +189,9 @@ export function KreditSimulator({
               {rupiah(sim.angsuran)}
             </p>
             <p className="t-small text-ink-muted">
-              {sim.jumlahAngsuran} kali angsuran, skema {skema}
+              {skema === "ADDM"
+                ? `${sim.sisaAngsuran} kali angsuran setelah TDP, skema ADDM`
+                : `${sim.sisaAngsuran} kali angsuran, skema ADDB`}
             </p>
             <Rincian
               gelap
@@ -264,6 +274,7 @@ export function KreditSimulator({
           </p>
         </div>
 
+        {perbandinganTenor ? (
         <div>
           <h3 className="t-h3">Perbandingan tenor</h3>
           <p className="t-small mt-1 text-muted">
@@ -314,6 +325,7 @@ export function KreditSimulator({
             </tbody>
           </ScrollTable>
         </div>
+        ) : null}
 
         <div className="rounded-card border border-line bg-surface p-5">
           <p className="t-small text-muted">

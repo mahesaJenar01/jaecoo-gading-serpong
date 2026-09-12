@@ -86,7 +86,7 @@ const faqKredit: Faq[] = [
   },
   {
     q: "Apa bedanya ADDB dan ADDM?",
-    a: "Pada ADDB atau angsuran dibayar belakang, pembayaran pertama berisi uang muka, biaya administrasi, dan premi TJH, lalu angsuran pertama dibayar sebulan kemudian. Premi asuransi kendaraan ikut dicicil di dalam angsuran. Pada ADDM atau angsuran dibayar di muka, pembayaran pertama sudah memuat seluruh biaya termasuk premi asuransi kendaraan dan angsuran bulan pertama, sehingga TDP lebih besar tetapi angsuran bulanannya lebih ringan.",
+    a: "Pada ADDB atau angsuran dibayar belakang, pembayaran pertama berisi uang muka, biaya administrasi, dan premi TJH, lalu angsuran pertama dibayar sebulan kemudian. Premi asuransi kendaraan ikut dicicil di dalam angsuran. Pada ADDM atau angsuran dibayar di muka, pembayaran pertama sudah memuat seluruh biaya termasuk premi asuransi kendaraan dan angsuran bulan pertama, sehingga TDP lebih besar tetapi angsuran bulanannya lebih ringan. Karena angsuran bulan pertama sudah ikut dibayar di TDP, bulan yang masih Anda tanggung setelah akad juga berkurang satu. Pada tenor 5 tahun misalnya, sisanya 59 kali angsuran, bukan 60.",
   },
   {
     q: "Apa bedanya asuransi kombinasi dan all risk full tenor?",
@@ -188,6 +188,7 @@ export default function KreditPage() {
               hargaOtr: v.hargaOtr,
             }))}
             sumber="Kredit"
+            perbandinganTenor={false}
           />
         </div>
 

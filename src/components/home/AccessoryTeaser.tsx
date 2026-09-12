@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Placeholder } from "@/components/ui/Placeholder";
 import { Section } from "@/components/ui/Section";
-import { paketSorot, selisihPaket } from "@/data/catalog";
+import { catatanHarga, paketSorot, selisihPaket } from "@/data/catalog";
 import { rupiah } from "@/lib/format";
 
 /**
@@ -38,6 +38,7 @@ export function AccessoryTeaser() {
             </h2>
 
             <p className="t-body mt-3 text-muted">
+              Kaca film Solargard Black Phantom, nano coating, sampai asuransi.
               Dipasang rapi dan dijadwalkan bersamaan dengan proses serah
               terima, sehingga mobil sudah siap pakai saat Anda terima.
             </p>
@@ -62,7 +63,7 @@ export function AccessoryTeaser() {
             <p className="t-small mt-4 text-muted">
               Harga di atas adalah harga paket aksesoris beserta jasa
               pemasangannya, terpisah dan tidak memengaruhi harga on the road
-              unit mobil.
+              unit mobil. {catatanHarga}
             </p>
 
             <div className="mt-6">

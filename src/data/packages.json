@@ -1,71 +1,99 @@
 {
-  "_catatan": "CONTOH, GANTI NANTI. Seluruh nama paket, isi, harga, estimasi pengerjaan, dan ketentuan garansi di berkas ini adalah data contoh supaya halaman bisa dilihat utuh. JSON tidak mendukung komentar, jadi setiap paket diberi penanda \"contoh\": true. Ganti nilainya dengan penawaran yang sebenarnya sebelum situs dipublikasikan.",
+  "_catatan": "Harga paket adalah harga promo yang sudah dipotong dari total bila seluruh isinya dibeli satuan. Total satuan tidak ditulis di sini, melainkan dihitung src/data/catalog.ts dari produkId tiap isi paket, supaya angkanya tidak pernah meleset dari products.json.",
+  "catatanHarga": "Harga di halaman ini belum final dan masih bisa dibicarakan lagi. Sebutkan paket atau item yang Anda incar lewat WhatsApp, nanti Mahesa bantu carikan angka terbaiknya.",
   "limitedOffer": {
-    "enabled": true,
+    "enabled": false,
     "label": "TODO: isi kalimat penawaran pemasangan aksesoris periode ini",
     "berlakuSampai": "TODO: isi tanggal berakhir penawaran",
     "kuota": null
   },
   "paket": [
     {
-      "id": "siap-pakai",
-      "contoh": true,
-      "nama": "Paket Siap Pakai",
-      "cocokUntuk": "Cocok untuk pembeli yang ingin mobil langsung nyaman dipakai harian sejak hari pertama.",
+      "id": "kaca-film-full",
+      "nama": "Paket Kaca Film Full",
+      "cocokUntuk": "Cocok untuk yang ingin kabin langsung adem sejak hari pertama, tanpa menambah apa apa lagi.",
       "isi": [
-        { "nama": "Kaca film depan dan samping", "nilaiTinggi": true },
-        { "nama": "Karpet dasar bahan karet", "nilaiTinggi": true },
-        { "nama": "Talang air 4 pintu", "nilaiTinggi": false },
-        { "nama": "Mud guard 4 roda", "nilaiTinggi": false },
-        { "nama": "Pembersihan akhir sebelum serah terima", "nilaiTinggi": false }
+        {
+          "nama": "Kaca film depan, samping, dan belakang Solargard Black Phantom",
+          "produkId": "kaca-film-depan-samping-belakang",
+          "nilaiTinggi": true
+        },
+        {
+          "nama": "Kaca film kaca atas Solargard Black Phantom",
+          "produkId": "kaca-film-atas",
+          "nilaiTinggi": true
+        }
       ],
       "estimasiPengerjaan": "1 hari kerja",
-      "garansiPemasangan": "Garansi pemasangan 30 hari",
-      "harga": 5200000,
-      "totalSatuan": 6350000,
+      "garansiPemasangan": "Ketentuan garansi disampaikan sebelum pengerjaan",
+      "harga": 6000000,
       "sorot": false
     },
     {
-      "id": "terlindungi-menyeluruh",
-      "contoh": true,
-      "nama": "Paket Terlindungi Menyeluruh",
-      "cocokUntuk": "Cocok untuk pemakaian harian di kota, parkir di luar ruangan, dan mobil yang ingin dijaga kondisi catnya.",
+      "id": "kaca-film-full-asuransi",
+      "nama": "Paket Kaca Film Full dan Asuransi",
+      "cocokUntuk": "Cocok untuk pembeli yang ingin kabin adem sekaligus unit terlindungi sejak tahun pertama. Nano coating 3 layer diberikan gratis di paket ini.",
       "isi": [
-        { "nama": "Coating bodi 9H", "nilaiTinggi": true },
-        { "nama": "Kaca film menyeluruh kelas atas", "nilaiTinggi": true },
-        { "nama": "Kamera perekam perjalanan depan dan belakang", "nilaiTinggi": true },
-        { "nama": "Karpet dasar custom", "nilaiTinggi": false },
-        { "nama": "Talang air 4 pintu", "nilaiTinggi": false },
-        { "nama": "Mud guard 4 roda", "nilaiTinggi": false },
-        { "nama": "Pembersihan akhir sebelum serah terima", "nilaiTinggi": false }
+        {
+          "nama": "Kaca film depan, samping, dan belakang Solargard Black Phantom",
+          "produkId": "kaca-film-depan-samping-belakang",
+          "nilaiTinggi": true
+        },
+        {
+          "nama": "Kaca film kaca atas Solargard Black Phantom",
+          "produkId": "kaca-film-atas",
+          "nilaiTinggi": true
+        },
+        {
+          "nama": "Asuransi all risk 1 tahun",
+          "produkId": "asuransi-all-risk-1-tahun",
+          "nilaiTinggi": true
+        },
+        {
+          "nama": "Gratis nano coating 3 layer",
+          "produkId": "nano-coating-3-layer",
+          "nilaiTinggi": true
+        }
       ],
       "estimasiPengerjaan": "2 hari kerja",
-      "garansiPemasangan": "Garansi pemasangan 90 hari",
-      "harga": 14900000,
-      "totalSatuan": 18450000,
+      "garansiPemasangan": "Ketentuan garansi disampaikan sebelum pengerjaan",
+      "harga": 12500000,
       "sorot": true
     },
     {
-      "id": "tampil-dan-terawat",
-      "contoh": true,
-      "nama": "Paket Tampil dan Terawat",
-      "cocokUntuk": "Cocok untuk pemilik yang ingin perlindungan cat paling menyeluruh sekaligus perawatan rutin di tahun pertama.",
+      "id": "lengkap",
+      "nama": "Paket Lengkap",
+      "cocokUntuk": "Cocok untuk yang ingin sekalian beres: kabin adem, cat terlindungi, unit terasuransi, dan ban serep sudah siap di bagasi.",
       "isi": [
-        { "nama": "Paint protection film bagian depan", "nilaiTinggi": true },
-        { "nama": "Coating bodi 9H", "nilaiTinggi": true },
-        { "nama": "Kaca film menyeluruh kelas atas", "nilaiTinggi": true },
-        { "nama": "Perawatan berkala 1 tahun, cuci dan poles", "nilaiTinggi": true },
-        { "nama": "Kamera perekam perjalanan depan dan belakang", "nilaiTinggi": false },
-        { "nama": "Karpet dasar custom", "nilaiTinggi": false },
-        { "nama": "Cover jok kulit sintetis", "nilaiTinggi": false },
-        { "nama": "Talang air 4 pintu", "nilaiTinggi": false },
-        { "nama": "Mud guard 4 roda", "nilaiTinggi": false },
-        { "nama": "Pembersihan akhir sebelum serah terima", "nilaiTinggi": false }
+        {
+          "nama": "Kaca film depan, samping, dan belakang Solargard Black Phantom",
+          "produkId": "kaca-film-depan-samping-belakang",
+          "nilaiTinggi": true
+        },
+        {
+          "nama": "Kaca film kaca atas Solargard Black Phantom",
+          "produkId": "kaca-film-atas",
+          "nilaiTinggi": true
+        },
+        {
+          "nama": "Asuransi all risk 1 tahun",
+          "produkId": "asuransi-all-risk-1-tahun",
+          "nilaiTinggi": true
+        },
+        {
+          "nama": "Ban serep",
+          "produkId": "ban-serep",
+          "nilaiTinggi": true
+        },
+        {
+          "nama": "Gratis nano coating 3 layer",
+          "produkId": "nano-coating-3-layer",
+          "nilaiTinggi": true
+        }
       ],
-      "estimasiPengerjaan": "3 hari kerja",
-      "garansiPemasangan": "Garansi pemasangan 90 hari",
-      "harga": 26500000,
-      "totalSatuan": 32750000,
+      "estimasiPengerjaan": "2 hari kerja",
+      "garansiPemasangan": "Ketentuan garansi disampaikan sebelum pengerjaan",
+      "harga": 17000000,
       "sorot": false
     }
   ]

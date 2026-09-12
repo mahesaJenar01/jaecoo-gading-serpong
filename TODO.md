@@ -64,6 +64,7 @@ berubah, seluruh simulasi ikut berubah sendiri.
 | Provisi | 3 persen dari pokok hutang, masuk angsuran, **tidak ditampilkan** |
 | TDP ADDB | uang muka + admin + TJH. Asuransi kendaraan dicicil di angsuran |
 | TDP ADDM | uang muka + admin + TJH + asuransi kendaraan + angsuran pertama |
+| Bulan yang ditanggung | ADDB seluruh tenor. ADDM berkurang satu bulan, karena angsuran pertama sudah ikut dibayar di TDP (`sisaAngsuran`) |
 | "Cicilan mulai" di kartu dan daftar harga | uang muka 30 persen, tenor 5 tahun, skema ADDM |
 
 Angka ini **simulasi**, bukan angka final leasing, dan setiap tempat yang
@@ -96,19 +97,31 @@ memang suara pengunjung: teks pertanyaan pada FAQ, dan pesan WhatsApp yang
 sudah terisi ketika pengunjung menekan tombol chat. Jangan mengubah keduanya
 menjadi "Mahesa".
 
-## D. Data contoh yang wajib diganti
+## D. Aksesoris
 
-Ditandai `"contoh": true` pada setiap entri, dan dijelaskan di
-`src/data/catalog.ts`.
+Katalog dan harga di `products.json` dan `packages.json` sudah berisi data
+yang sebenarnya. Yang masih perlu dikonfirmasi Mahesa tinggal tiga baris:
 
-| Berkas | Isi contoh |
-|---|---|
-| `src/data/packages.json` | Tiga nama paket, seluruh isi paket, harga paket, total harga satuan, estimasi pengerjaan, ketentuan garansi |
-| `src/data/packages.json` → `limitedOffer` | Label penawaran dan tanggal berlaku masih `TODO`. Bila belum ada penawaran, cukup ubah `enabled` menjadi `false` dan seluruh bilah penawaran hilang |
-| `src/data/products.json` | 19 item katalog beserta harga dan catatannya |
-| FAQ `/produk-lainnya` | "Apakah harga di halaman ini sudah final?" |
+| Item | Tempat | Isinya sekarang |
+|---|---|---|
+| Estimasi pengerjaan tiap paket | `src/data/packages.json` → `estimasiPengerjaan` | 1 sampai 2 hari kerja. Sesuaikan bila bengkel memberi angka yang berbeda |
+| Ketentuan garansi pemasangan | `src/data/packages.json` → `garansiPemasangan` | "Ketentuan garansi disampaikan sebelum pengerjaan". Ganti dengan masa berlaku yang pasti begitu ketentuannya ditetapkan, lalu sesuaikan juga jawaban FAQ "Apakah ada garansi pemasangan?" di `src/app/produk-lainnya/page.tsx` |
+| `limitedOffer` | `src/data/packages.json` | `enabled` masih `false` karena belum ada penawaran periode tertentu. Bila nanti ada, isi `label` dan `berlakuSampai` lalu ubah `enabled` menjadi `true` |
 
-Selama data ini masih contoh, jangan mempromosikan halaman `/produk-lainnya`.
+**Yang tidak boleh diubah tanpa alasan.**
+
+- Harga di halaman aksesoris adalah harga acuan, bukan harga mati.
+  Kalimatnya ada di `catatanHarga` pada `packages.json` dan wajib ikut
+  tampil di setiap tempat yang menyebut harga aksesoris.
+- Tingkat tolak panas kaca film tidak pernah disebutkan dalam angka. Kaca
+  film yang ditawarkan adalah Solargard tipe Black Phantom, dan manfaatnya
+  cukup disebut sebagai kabin yang jadi lebih adem.
+- Premi asuransi all risk tidak ditulis sebagai nominal. Item
+  `asuransi-all-risk-1-tahun` menyimpan `rateOtr` sebesar `0.0208`, dan
+  nominalnya dihitung `catalog.ts` dari harga OTR unit unggulan.
+- Total harga satuan tiap paket tidak ditulis manual. Angka coret di kartu
+  paket dijumlahkan dari `produkId` tiap isi paket, jadi cukup ubah harga di
+  `products.json` dan angka coretnya ikut menyesuaikan.
 
 ---
 
@@ -118,9 +131,9 @@ Sudah terpasang: logo, favicon, foto profil, dan 17 foto serah terima. Rincian
 dan cara menambahnya ada di `IMAGES.md`.
 
 Yang belum ada: foto unit (hero, kartu model, galeri halaman model, foto per
-warna) serta foto katalog aksesoris. Daftar lengkapnya beserta rasio, ukuran
-piksel, dan alt text ada di `IMAGES.md`. Prioritas: hero beranda, tiga foto
-kartu model, lalu foto utama tiga halaman model.
+warna) serta foto sembilan item katalog aksesoris. Daftar lengkapnya beserta
+rasio, ukuran piksel, dan alt text ada di `IMAGES.md`. Prioritas: hero
+beranda, tiga foto kartu model, lalu foto utama tiga halaman model.
 
 Testimoni tertulis sengaja tidak dipakai. Bukti sosial di situs ini berupa foto
 serah terima saja, dan seluruhnya dipasang atas izin pemilik unit.

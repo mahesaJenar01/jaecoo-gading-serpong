@@ -48,25 +48,41 @@ export type LimitedOffer = {
   kuota: number | null;
 };
 
-export type PaketItem = { nama: string; nilaiTinggi: boolean };
+export type PaketItem = {
+  nama: string;
+  /** id item di products.json. Dipakai untuk menjumlahkan harga satuannya. */
+  produkId?: string;
+  nilaiTinggi: boolean;
+};
 
-export type Paket = {
+/** Bentuk paket sebagaimana ditulis di packages.json. */
+export type PaketData = {
   id: string;
   nama: string;
   cocokUntuk: string;
   isi: PaketItem[];
   estimasiPengerjaan: string;
   garansiPemasangan: string;
+  /** Harga paket setelah dipotong. */
   harga: number;
-  totalSatuan: number;
   sorot: boolean;
 };
 
-export type Produk = {
+/** Paket siap pakai: total satuannya sudah dihitung dari isi paket. */
+export type Paket = PaketData & { totalSatuan: number };
+
+/** Bentuk item katalog sebagaimana ditulis di products.json. */
+export type ProdukData = {
   id: string;
   nama: string;
   kategori: string;
   deskripsiSingkat: string;
-  hargaMulai: number;
+  /** Harga tetap. Kosong bila harganya mengikuti harga OTR unit. */
+  hargaMulai?: number;
+  /** Persentase harga OTR, untuk item yang harganya mengikuti unit. */
+  rateOtr?: number;
   catatan: string;
 };
+
+/** Item katalog siap pakai: hargaMulai selalu terisi. */
+export type Produk = Omit<ProdukData, "hargaMulai"> & { hargaMulai: number };

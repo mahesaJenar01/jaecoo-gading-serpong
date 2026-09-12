@@ -16,7 +16,9 @@
  *   ADDB  TDP = uang muka + biaya admin + premi TJH seluruh tenor.
  *         Premi asuransi kendaraan ikut dicicil di dalam angsuran.
  *   ADDM  TDP = uang muka + biaya admin + premi TJH + premi asuransi
- *         kendaraan seluruh tenor + angsuran bulan pertama.
+ *         kendaraan seluruh tenor + angsuran bulan pertama. Karena angsuran
+ *         bulan pertama sudah ikut dibayar di TDP, sisa angsuran bulanan
+ *         yang masih ditanggung berkurang satu bulan.
  *
  * Premi asuransi kendaraan per tahun = rate x harga OTR, memakai batas
  * bawah rate OJK Wilayah II (DKI Jakarta, Jawa Barat, Banten).
@@ -100,7 +102,8 @@ export const SKEMA_OPSI: { nilai: Skema; label: string; keterangan: string }[] =
   {
     nilai: "ADDM",
     label: "ADDM",
-    keterangan: "Angsuran dibayar di muka. Angsuran pertama ikut dibayar di TDP.",
+    keterangan:
+      "Angsuran dibayar di muka. Angsuran pertama ikut dibayar di TDP, jadi sisa angsuran bulanannya berkurang satu bulan.",
   },
 ];
 
@@ -154,7 +157,14 @@ export type Simulasi = InputSimulasi & {
   pokokHutang: number;
   /** Bunga flat per tahun untuk tenor yang dipilih. */
   bunga: number;
+  /** Banyaknya angsuran yang menjadi pembagi, yaitu tenor dikali 12. */
   jumlahAngsuran: number;
+  /**
+   * Angsuran yang masih dibayar bulanan setelah akad. Pada ADDM angsuran
+   * bulan pertama sudah ikut dibayar di TDP, jadi bulan yang ditanggung
+   * konsumen berkurang satu.
+   */
+  sisaAngsuran: number;
   asuransiTahunan: PremiTahunan[];
   totalAsuransi: number;
   totalTjh: number;
@@ -185,6 +195,11 @@ export function simulasiKredit(input: InputSimulasi): Simulasi {
   // Dibulatkan ke ribuan terdekat supaya tidak terbaca sebagai angka final.
   const angsuran = Math.round(totalHutang / jumlahAngsuran / 1000) * 1000;
 
+  // Pembaginya tetap seluruh tenor, karena angsuran bulan pertama pada ADDM
+  // memang salah satu dari angsuran itu, hanya waktu bayarnya dimajukan ke
+  // TDP. Yang berkurang adalah bulan yang masih ditanggung setelah akad.
+  const sisaAngsuran = skema === "ADDM" ? jumlahAngsuran - 1 : jumlahAngsuran;
+
   const rincianTdp = [
     { label: `Uang muka ${persenDp} persen`, nilai: dp },
     { label: "Biaya administrasi", nilai: BIAYA_ADMIN },
@@ -203,6 +218,7 @@ export function simulasiKredit(input: InputSimulasi): Simulasi {
     pokokHutang,
     bunga,
     jumlahAngsuran,
+    sisaAngsuran,
     asuransiTahunan,
     totalAsuransi,
     totalTjh,
