@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Placeholder } from "@/components/ui/Placeholder";
 import { Section } from "@/components/ui/Section";
-import { catatanHarga, paketSorot, selisihPaket } from "@/data/catalog";
+import { paketSorot, selisihPaket } from "@/data/catalog";
 import { rupiah } from "@/lib/format";
 
 /**
@@ -63,7 +63,7 @@ export function AccessoryTeaser() {
             <p className="t-small mt-4 text-muted">
               Harga di atas adalah harga paket aksesoris beserta jasa
               pemasangannya, terpisah dan tidak memengaruhi harga on the road
-              unit mobil. {catatanHarga}
+              unit mobil.
             </p>
 
             <div className="mt-6">

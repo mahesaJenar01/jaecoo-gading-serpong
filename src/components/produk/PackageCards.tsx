@@ -1,7 +1,7 @@
 import { IconCheck } from "@/components/icons";
 import { Badge } from "@/components/ui/Badge";
 import { WaButton } from "@/components/wa/WaButton";
-import { catatanHarga, limitedOffer, paket, selisihPaket } from "@/data/catalog";
+import { limitedOffer, paket, selisihPaket } from "@/data/catalog";
 import type { Paket } from "@/data/types";
 import { rupiah } from "@/lib/format";
 import { waPaket } from "@/lib/wa";
@@ -27,25 +27,6 @@ export function PackageOfferBar() {
         {limitedOffer.kuota !== null ? (
           <> Sisa kuota {limitedOffer.kuota} unit.</>
         ) : null}
-      </p>
-    </div>
-  );
-}
-
-/**
- * Catatan bahwa harga aksesoris belum final.
- *
- * Wajib tampil di setiap tempat yang menyebut harga paket atau harga
- * katalog satuan, karena angka di halaman ini adalah harga acuan yang
- * masih bisa dibicarakan lagi, bukan harga mati. Kalimatnya dibaca dari
- * catatanHarga di packages.json supaya cukup diubah di satu tempat.
- */
-export function PriceNoteBar() {
-  return (
-    <div className="rounded-card border border-line bg-surface px-4 py-3 md:px-5">
-      <p className="t-small text-muted">
-        <span className="font-semibold text-ink">Harga masih bisa dibicarakan.</span>{" "}
-        {catatanHarga}
       </p>
     </div>
   );
@@ -134,9 +115,6 @@ function PackageCard({ paket: p }: { paket: Paket }) {
           <p className="t-h2 text-brand">{rupiah(p.harga)}</p>
           <p className="t-small mt-1 font-semibold text-ink">
             Hemat {rupiah(selisih.rupiah)} atau sekitar {selisih.persen} persen
-          </p>
-          <p className="t-small mt-1 text-muted">
-            Harga acuan, masih bisa dibicarakan lagi.
           </p>
         </div>
 

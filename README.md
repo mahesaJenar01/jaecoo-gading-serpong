@@ -68,9 +68,11 @@ melainkan `rateOtr` sebesar `0.0208`. Nominalnya dihitung dari harga OTR unit
 unggulan, sehingga ikut berubah sendiri ketika harga OTR di `models.json`
 diperbarui.
 
-**Kalimat negosiasi harga.** Ubah `catatanHarga` di `packages.json`. Kalimat
-itu tampil di halaman `/produk-lainnya`, di kartu ringkas aksesoris beranda,
-dan ikut ke `llms-full.txt`.
+**Kalimat negosiasi harga.** `catatanHarga` di `packages.json` sengaja tidak
+dirender di halaman mana pun, hanya ikut ke `llms-full.txt`. Bahwa harga
+masih bisa dibicarakan hanya disebut pada jawaban FAQ `/produk-lainnya`,
+yaitu ketika pengunjung memang menanyakannya, bukan ditawarkan sendiri di
+atas daftar harga.
 
 **Artikel baru.** Salin folder artikel yang ada di `src/content/articles/`,
 ganti slug, isi `SECTIONS` dan `meta`, lalu tambahkan satu baris di
@@ -105,8 +107,10 @@ langsung di komponen.
    Kaca film yang ditawarkan adalah Solargard tipe Black Phantom, dan
    manfaatnya cukup disebut sebagai kabin yang jadi lebih adem karena tolak
    panasnya tinggi.
-9. Harga aksesoris di `/produk-lainnya` adalah harga acuan, bukan harga mati.
-   Setiap tempat yang menyebutnya wajib menyertakan `catatanHarga`.
+9. Harga aksesoris di `/produk-lainnya` adalah harga acuan, bukan harga mati,
+   tetapi jangan menawarkan negosiasi sendiri di halaman. Cukup dijawab di
+   FAQ bila ditanyakan. Jangan menambah bilah atau catatan harga acuan di
+   atas daftar paket maupun di kartu paket.
 10. Situs ini menyebut Mahesa dengan namanya, bukan "saya". Pengecualiannya
     hanya teks yang memang suara pengunjung: pertanyaan pada FAQ dan pesan
     WhatsApp yang sudah terisi di tombol chat.

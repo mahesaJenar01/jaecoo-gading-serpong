@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-import {
-  PackageCards,
-  PackageOfferBar,
-  PriceNoteBar,
-} from "@/components/produk/PackageCards";
+import { PackageCards, PackageOfferBar } from "@/components/produk/PackageCards";
 import { PackageComparison } from "@/components/produk/PackageComparison";
 import { ProductCard } from "@/components/produk/ProductCard";
 import {
@@ -92,9 +88,8 @@ export default function ProdukLainnyaPage() {
           description="Tiga paket dengan isi yang berbeda. Harga di bawah adalah harga paket beserta jasa pemasangannya, dan sudah lebih murah dibanding membeli isinya satuan."
         />
 
-        <div className="mt-6 flex flex-col gap-3">
+        <div className="mt-6">
           <PackageOfferBar />
-          <PriceNoteBar />
         </div>
 
         <div className="mt-6 md:mt-8">
@@ -119,10 +114,6 @@ export default function ProdukLainnyaPage() {
           title="Katalog satuan"
           description="Bila Anda hanya butuh beberapa item, ambil satuan saja. Saring berdasarkan kategori untuk mempercepat pencarian."
         />
-
-        <div className="mt-6">
-          <PriceNoteBar />
-        </div>
 
         <div className="mt-8">
           <PillFilter

@@ -110,9 +110,10 @@ yang sebenarnya. Yang masih perlu dikonfirmasi Mahesa tinggal tiga baris:
 
 **Yang tidak boleh diubah tanpa alasan.**
 
-- Harga di halaman aksesoris adalah harga acuan, bukan harga mati.
-  Kalimatnya ada di `catatanHarga` pada `packages.json` dan wajib ikut
-  tampil di setiap tempat yang menyebut harga aksesoris.
+- Harga di halaman aksesoris adalah harga acuan, bukan harga mati, tetapi
+  hal itu tidak ditawarkan sendiri di halaman. `catatanHarga` pada
+  `packages.json` hanya ikut ke `llms-full.txt`. Di halaman, negosiasi harga
+  hanya disebut pada jawaban FAQ, yaitu ketika pengunjung menanyakannya.
 - Tingkat tolak panas kaca film tidak pernah disebutkan dalam angka. Kaca
   film yang ditawarkan adalah Solargard tipe Black Phantom, dan manfaatnya
   cukup disebut sebagai kabin yang jadi lebih adem.
